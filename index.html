@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Monty Hall Problem - adarwawan</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/clean-blog.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body style="background-color: #FFFFAA">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">adarwawan</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="index.html">Monty Hall Problem</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Header -->
+    <!-- Set your background image for this header on the line below. -->
+    <header class="intro-header" style="background-image: url('img/post-bg.jpg')">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <div class="post-heading">
+                        <h1>Monty Hall Problem</h1>
+                        <h2 class="subheading">Tetap atau Pindah Kotak?</h2>
+                        <span class="meta">Posted by <a href="#">adarwawan</a> on June 2, 2015</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Post Content -->
+    <article style="background-color: #FFFFAA">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <p>Pernahkah Anda menonton acara Game Show Super Deal 2 Milyar? Dalam acara tersebut, terdapat berbagai tirai, box, dan saku yang di salah satu tempat berisi sebuah hadiah utama. Selain hadiah utama, juga terdapat hadiah yang lebih kecil nilainya serta zonk alias jebakan. Acara tersebut ternyata diadaptasi dari Game Show serupa di Prancis yang dulu sempat heboh karena melatarbelakangi lahirnya sebuah teori probabilitas yang pada awalnya banyak orang yang tidak percaya. Teori tersebut kita kenal dengan Monty Hall Problem yang akan kita bahas pada artikel ini.</p>
+
+                    <h2 class="section-heading">Latar Belakang</h2>
+
+                    <p>Monty Hall Problem berasal dari nama presenter yang membawakan sebuah acara Game Show berjudul Let's Make a Deal yaitu Monty Hall. Masalah tersebut mulai diajukan oleh Steve Selvin dalam sebuah paper berjudul "A Problem In Probability" ke American Statistician pada tahun 1975. Namun, hal tersebut mulai terkenal 15 tahun kemudian ketika pada tahun 1990, ada seseorang yang menanyakan masalah tersebut pada kolom surat pembaca milik Marilyn vos Savant dalam majalah Parade. Pertanyaan yang diajukan adalah sebagai berikut:</p>
+
+                    <blockquote>Saat ini kamu berada dalam acara kuis televisi. Pembawa acara memperlihatkan 3 buah pintu. Dibalik salah satu pintu terdapat hadiah mobil dan dua lainnya terdapat seekor kambing. Kamu memilih sebuah pintu, sebagai contoh pintu no.1. Kemudian, pembawa acara yang mengetahui isi pintu membuka salah satu pintu yang tidak dipilih dan berisi kambing, sebagai contoh pintu no.3. Lalu, pembawa acara menawarkan kepadamu untuk tetap memilih pintu no.1 atau pindah ke pintu no.2. Pertanyaannya, apakah sebaiknya kamu berubah pikiran dan memilih pintu no.2 atau tetap pada pilihan kamu sebelumnya yaitu pintu no.1?</blockquote>
+
+                    <p>Vos Savant kemudian menjawab bahwa sebaiknya kontestan berubah pikiran dan memilih pintu lainnya karena peluang untuk mendapatkan mobil adalah <b>2/3</b> sedangkan jika tetap pada pilihan sebelumnya adalah <b>1/3</b>. Jawaban tersebut menjadi kontroversi dan menimbulkan banyak tanggapan karena dianggap salah. Padahal, secara matematika pernyataan Vos Savant itu benar adanya.</p>
+
+                    <p>Monty Hall Problem ini juga pernah disinggung dalam beberapa film. Penulis sendiri mengetahui teori ini dari film "21 The Movie" pada tahun 2008.</p>
+
+                    <h2 class="section-heading">Analisis Masalah</h2>
+
+                    <p>Sebelum kita menganalisis masalah ini, kita harus mengetahui aturan-aturan dasar dalam permainan tersebut. Ada 3 aturan yaitu:
+                    <ol>
+                        <li>Pembawa acara selalu membuka sebuah pintu yang tidak dipilih oleh kontestan.</li>
+                        <li>Pembawa acara selalu membuka pintu berisi kambing dan tidak pernah membuka mobil.</li>
+                        <li>Pembawa acara selalu memberikan kesempatan untuk mengganti pintu yang dipilih.</li>
+                    </ol></p>
+
+                    <p>Dalam menganalisis Monty Hall Problem, kita dapat lakukan dua pendekatan yaitu dengan: 1) Diagram Peluang, dan 2) Perhitungan Matematika.</p>
+
+                    <h3>1. Diagram Peluang</h3>
+
+                    <p>Pada diagram peluang ini, kontestan selalu memilih pintu 1 sebagai pilihan pertama.</p>
+
+                    <img class="img-responsive" src="img/diagram-probabilitas.jpg" alt="">
+
+                    <p>Dari diagram tersebut, peluang kontestan mendapatkan mobil jika tetap pada pilihannya adalah 1/6 + 1/6 = 1/3. Sedangkan jika kontestan mengubah pintu pilihannya, maka didapat peluang mendapatkan mobil adalah 1/3 + 1/3 = 2/3. </p>
+
+                    <h3>2. Perhitungan Matematika</h3>
+
+                    <p>Kita dapat menghitung peluang mendapatkan mobil dengan memanfaatkan teorema Bayes. Misalkan pintu tersebut dilabeli dengan 1,2,3. C1 adalah kejadian terdapat mobil pada pintu 1 dan O1 adalah kejadian pembawa acara membuka pintu 1. Jika kita memilih pintu 1 sebagai pintu awal, maka peluang kita mendapatkan mobil jika kita mengubah pilihan pintu adalah: </p>
+
+                    <p><em>P(O2 ^ C3) + P(O3 ^ C2) <br>
+                    = P(C3) x P(O2 | C3) + P(C2) x P(O3 | C2)<br>
+                    = (1/3) x 1 + (1/3) x 1<br>
+                    = 2/3.</em> </p>
+
+                    <h2 class="section-heading">N-Door Monty Hall Problem</h2>
+
+                    <p>Untuk permainan dengan 4 pintu, maka akan terdapat 4 kondisi yang kita jabarkan dalam tabel berikut peluangnya. Peluang tersebut dapat dihitung menggunakan 2 metode diatas.</p>
+
+                    <img class="img-responsive" src="img/4-door-probability.jpg" alt="">
+
+                    <p>Dari tabel tersebut, kita dapat generalisasikan bahwa jika kita bermain dengan N pintu. Peluang terbesar adalah dengan memilih sebuah pintu dan hanya diganti pada kesempatan terakhir dengan besar peluang <b>(N-1/N)</b>.</p>
+
+                    <h2 class="section-heading">Bonus Video</h2>
+
+                    <p>Agar dapat mengetahui lebih jelas mengenai Monty Hall Problem saya menyarankan untuk menyaksikan video berikut.</p>
+
+                    <div class="embed-responsive embed-responsive-4by3">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/ugbWqWCcxrg" frameborder="0" allowfullscreen></iframe>
+                    </div>
+
+                    <p style="font-size: 12px" align="right"><b>Referensi: </b><br>
+                        <a href="http://marilynvossavant.com/game-show-problem/">Pertanyaan dari Marilyn Vos Savant</a><br>
+                        <a href="http://www.jstor.org/stable/2683689?seq=1#page_scan_tab_contents">Paper Steve Selvin : A problem in probability</a><br>
+                        <a href="http://mathworld.wolfram.com/MontyHallProblem.html">Mathworld Wolfram</a><br>
+                        <a href="http://en.wikipedia.org/wiki/Monty_Hall_problem">Wiki</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer style="background-color: #FFFFAA">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <p class="copyright text-muted">Copyright &copy; adarwawan 2015. Credit to: <a href="http://startbootstrap.com/template-overviews/clean-blog/">Clean Blog-Start Bootstrap</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/clean-blog.min.js"></script>
+
+</body>
+
+</html>
